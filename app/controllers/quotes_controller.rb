@@ -27,10 +27,7 @@ class QuotesController < ApplicationController
 
 
   private
-  def json_response(object)
-    render json: object, status: :ok
-  end
-
+  
   def quote_params
     params.permit(:author, :content)
   end
